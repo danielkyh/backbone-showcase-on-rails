@@ -1,18 +1,30 @@
 1. What is the ~/.railsrc file for?
 
+    Configuring rails. Explicitly excludes certain gems from rails app.
+
 2. What is a closure in JavaScript? How do you create a closure in Ruby?
+
+    In JS, its a design pattern that enables you to create client libraries / modules. It wraps functions inside an object literate and exposes an interface.  In Ruby, its the same thing as a mix-in/module.
 
 3. What is a serializer in Rails API and why do we need it?
 
-4. Does Backbone have two-way data binding? Explain. 
+    It takes JSON object and parses it/prepares it for Active Record to find data or save data.
+
+4. Does Backbone have two-way data binding? Explain.
 
 5. In views/show.js, what is the el property for an instance of ShowView?
+
+    el stands for HTML element?
 
 6. Why do we return this at the end of the render function in a view?
 
 7. Describe the purpose and function of an Underscore template in Backbone.
 
+    Its like a partial.  This allows you to inject a body of HTML into the main index.html, allowing for a single page app.
+
 8. What's the point of var app = app || {} at the beginning of every .js file?
+
+    Ensuring the scope of variables / functions are contained within one structure, enabling the js interpreter to maintain memory and namespaces.
 
 9. Why do we not need a template for the ShowcaseView in views/showcase.js?
 
