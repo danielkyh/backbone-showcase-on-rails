@@ -8,27 +8,27 @@
     <body>
     <div id="shows">
         <form id="addShow" action="#">
-            <label for="title">Title: </label><input id="title" type="text" />
-            <label for="genre">Genre: </label><input id="genre" type="text" />
-            <label for="stars">Stars: </label><input id="stars" type="text" />
+            <label for="title">Title: </label><input name="title" type="text" />
+            <label for="genre">Genre: </label><input name="genre" type="text" />
+            <label for="stars">Stars: </label><input name="stars" type="text" />
             <button id="add">Add</button>
         </form>
-      <div class="showContainer">
-        <img src="img/placeholder.png"/>
-          <ul>
-            <li>Gilmore Girls</li>
-            <li>Drama</li>
-            <li>★★★★★</li>
-          </ul>
-        </div>
-      <script id="showTemplate" type="text/template">
-      <!-- replace the sample above with a template -->
-      </script>
+      <!-- <div class="showContainer"> -->
+          <script id="showTemplate" type="text/template">
+              <ul>
+                <img src="img/placeholder.png"/>
+                <li><%= title %></li>
+                <li><%= genre %></li>
+                <li><%= stars %></li>
+              </ul>
+              <button class="delete">Delete</button>
+          </script>
+      <!-- </div> -->
     </div>
         <script src="js/lib/jquery.min.js"></script>
         <script src="js/lib/underscore-min.js"></script>
-        <script src="js/lib/backbone-min.js"></script>
-        <script src="js/lib/backbone-localstorage-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage.js"></script>
         <script src="js/models/show.js"></script>
         <script src="js/collections/Showcase.js"></script>
         <script src="js/views/show.js"></script>

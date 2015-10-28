@@ -14,9 +14,11 @@
 
 5. In views/show.js, what is the el property for an instance of ShowView?
 
-    el stands for HTML element?
+    div
 
 6. Why do we return this at the end of the render function in a view?
+
+   the render function builds the DOM structures, this returns a pointer to "this" which can then be appended into the HTML view.
 
 7. Describe the purpose and function of an Underscore template in Backbone.
 
