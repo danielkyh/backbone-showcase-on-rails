@@ -34,7 +34,7 @@ class ShowsController < ApplicationController
 
   private
 
-  def set_post
+  def set_show
     @show = Show.find(params[:id])
   end
 
